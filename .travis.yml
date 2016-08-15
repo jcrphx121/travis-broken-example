@@ -11,7 +11,8 @@ addons:
         key_url: 'https://packagecloud.io/gpg.key'
   
     packages:
-      - libcxsparse3.1.2        
+      - gcc-4.8
+      - g++-4.8       
 
 language: php
 php:
