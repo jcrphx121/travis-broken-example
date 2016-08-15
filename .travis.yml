@@ -20,6 +20,6 @@ branches:
 branches:
   only:
     - master
-    - stable
+    - scale 
 
     
