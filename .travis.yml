@@ -4,12 +4,12 @@ before_install:
 
 addons:
   apt:
-    sources:
-      - lucid
-
-    packages:
+      packages:
       - cmake
-             
+
+language: ruby
+cache: bundler
+
 
 language: php
 php:
