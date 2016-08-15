@@ -2,6 +2,18 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y libxml2-dev
 
+addons:
+  apt:
+    sources:
+      - deadsnakers
+      - sourceline: 'ppa:ubuntu-toolchain-r/test'
+      - sourceline: 'deb https://packagecloud.io/chef/stable/ubuntu/precise main'
+        key_url: 'https://packagecloud.io/gpg.key'
+  apt:
+    packages:
+    - cmake
+    - time        
+
 language: php
 php:
   - 5.5
@@ -16,10 +28,6 @@ branches:
   except:
      - legacy
 
-# safelist
-branches:
-  only:
-    - master
-    - scale 
+
 
     
