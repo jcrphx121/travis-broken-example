@@ -5,14 +5,11 @@ before_install:
 addons:
   apt:
     sources:
-      - deadsnakers
-      - sourceline: 'ppa:ubuntu-toolchain-r/test'
-      - sourceline: 'deb https://packagecloud.io/chef/stable/ubuntu/precise main'
-        key_url: 'https://packagecloud.io/gpg.key'
-  
+      - lucid
+
     packages:
-      - gcc-4.8
-      - g++-4.8       
+      - cmake
+             
 
 language: php
 php:
